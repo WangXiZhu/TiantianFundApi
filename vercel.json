@@ -1,9 +1,14 @@
 {
   "version": 2,
+  "public": true,
   "builds": [
     {
       "src": "api/**/*.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
   ],
   "rewrites": [
@@ -42,7 +47,8 @@
     { "source": "/stockDetails", "destination": "/api/action?action_name=stockDetails" },
     { "source": "/stockKline", "destination": "/api/action?action_name=stockKline" },
     { "source": "/stockTrends2", "destination": "/api/action?action_name=stockTrends2" },
-    { "source": "/sse", "destination": "/api/action?action_name=sse" }
+    { "source": "/sse", "destination": "/api/action?action_name=sse" },
+    { "source": "/(.*)", "destination": "/public/$1" }
   ],
   "headers": [
     {
