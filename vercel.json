@@ -1,0 +1,185 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/fundMNDetailInformation(.*)",
+      "dest": "/api/action.js?action_name=fundMNDetailInformation&$1"
+    },
+    {
+      "src": "/fundMNHisNetList(.*)",
+      "dest": "/api/action.js?action_name=fundMNHisNetList&$1"
+    },
+    {
+      "src": "/fundMNStopWatch(.*)",
+      "dest": "/api/action.js?action_name=fundMNStopWatch&$1"
+    },
+    {
+      "src": "/fundSearch(.*)",
+      "dest": "/api/action.js?action_name=fundSearch&$1"
+    },
+    {
+      "src": "/fundNetList(.*)",
+      "dest": "/api/action.js?action_name=fundNetList&$1"
+    },
+    {
+      "src": "/fundMNRank(.*)",
+      "dest": "/api/action.js?action_name=fundMNRank&$1"
+    },
+    {
+      "src": "/fundVPageAcc(.*)",
+      "dest": "/api/action.js?action_name=fundVPageAcc&$1"
+    },
+    {
+      "src": "/fundVPageDiagram(.*)",
+      "dest": "/api/action.js?action_name=fundVPageDiagram&$1"
+    },
+    {
+      "src": "/fundGradeDetail(.*)",
+      "dest": "/api/action.js?action_name=fundGradeDetail&$1"
+    },
+    {
+      "src": "/fundSuggestList(.*)",
+      "dest": "/api/action.js?action_name=fundSuggestList&$1"
+    },
+    {
+      "src": "/fundRankDiagram(.*)",
+      "dest": "/api/action.js?action_name=fundRankDiagram&$1"
+    },
+    {
+      "src": "/fundThemeList(.*)",
+      "dest": "/api/action.js?action_name=fundThemeList&$1"
+    },
+    {
+      "src": "/fundThemeFocusList(.*)",
+      "dest": "/api/action.js?action_name=fundThemeFocusList&$1"
+    },
+    {
+      "src": "/fundCompanyBaseList(.*)",
+      "dest": "/api/action.js?action_name=fundCompanyBaseList&$1"
+    },
+    {
+      "src": "/fundVarietieValuationDetail(.*)",
+      "dest": "/api/action.js?action_name=fundVarietieValuationDetail&$1"
+    },
+    {
+      "src": "/fundSearchInfoByName(.*)",
+      "dest": "/api/action.js?action_name=fundSearchInfoByName&$1"
+    },
+    {
+      "src": "/fundMNSubjectList(.*)",
+      "dest": "/api/action.js?action_name=fundMNSubjectList&$1"
+    },
+    {
+      "src": "/fundMNPeriodIncrease(.*)",
+      "dest": "/api/action.js?action_name=fundMNPeriodIncrease&$1"
+    },
+    {
+      "src": "/fundMNNetNewList(.*)",
+      "dest": "/api/action.js?action_name=fundMNNetNewList&$1"
+    },
+    {
+      "src": "/fundMNMangerList(.*)",
+      "dest": "/api/action.js?action_name=fundMNMangerList&$1"
+    },
+    {
+      "src": "/fundMNHKRank(.*)",
+      "dest": "/api/action.js?action_name=fundMNHKRank&$1"
+    },
+    {
+      "src": "/fundMSNMangerAcc(.*)",
+      "dest": "/api/action.js?action_name=fundMSNMangerAcc&$1"
+    },
+    {
+      "src": "/fundMSNMangerInfo(.*)",
+      "dest": "/api/action.js?action_name=fundMSNMangerInfo&$1"
+    },
+    {
+      "src": "/fundMSNMangerPerEval(.*)",
+      "dest": "/api/action.js?action_name=fundMSNMangerPerEval&$1"
+    },
+    {
+      "src": "/fundMSNMangerPerRank(.*)",
+      "dest": "/api/action.js?action_name=fundMSNMangerPerRank&$1"
+    },
+    {
+      "src": "/fundMSNMangerPosChar(.*)",
+      "dest": "/api/action.js?action_name=fundMSNMangerPosChar&$1"
+    },
+    {
+      "src": "/fundMSNMangerPosMark(.*)",
+      "dest": "/api/action.js?action_name=fundMSNMangerPosMark&$1"
+    },
+    {
+      "src": "/fundMSNMangerProContr(.*)",
+      "dest": "/api/action.js?action_name=fundMSNMangerProContr&$1"
+    },
+    {
+      "src": "/bigDataList(.*)",
+      "dest": "/api/action.js?action_name=bigDataList&$1"
+    },
+    {
+      "src": "/bigDataDetail(.*)",
+      "dest": "/api/action.js?action_name=bigDataDetail&$1"
+    },
+    {
+      "src": "/companyApi2(.*)",
+      "dest": "/api/action.js?action_name=companyApi2&$1"
+    },
+    {
+      "src": "/stockGet(.*)",
+      "dest": "/api/action.js?action_name=stockGet&$1"
+    },
+    {
+      "src": "/stockDetails(.*)",
+      "dest": "/api/action.js?action_name=stockDetails&$1"
+    },
+    {
+      "src": "/stockKline(.*)",
+      "dest": "/api/action.js?action_name=stockKline&$1"
+    },
+    {
+      "src": "/stockTrends2(.*)",
+      "dest": "/api/action.js?action_name=stockTrends2&$1"
+    },
+    {
+      "src": "/sse(.*)",
+      "dest": "/api/action.js?action_name=sse&$1"
+    },
+    {
+      "src": "/(.*\\.js)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(.*\\.css)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/(.*\\.html)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/public/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
+}

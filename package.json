@@ -8,15 +8,20 @@
   ],
   "scripts": {
     "start": "node index.js",
+    "dev": "node index.js",
+    "vercel-build": "echo 'No build required'",
     "lint": "eslint . --ext .js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "test": "cross-env NODE_ENV=test nyc --reporter=lcov mocha --require ./test/fixtures.js ./test/**/*.spec.js --timeout 30s",
     "test-reporter": "cross-env NODE_ENV=test nyc --reporter=lcov mocha --require ./test/fixtures.js ./test/**/*.spec.js --reporter json > test-results.json --timeout 30s"
   },
+  "engines": {
+    "node": ">=18.x"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kouchao/TiantianFundApi.git"
+    "url": "git+https://github.com/WangXiZhu/TiantianFundApi.git"
   },
   "keywords": [
     "天天基金网",
@@ -24,17 +29,18 @@
     "基金api",
     "基金接口"
   ],
-  "author": "kouchao",
+  "author": "WangXiZhu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kouchao/TiantianFundApi/issues"
+    "url": "https://github.com/WangXiZhu/TiantianFundApi/issues"
   },
-  "homepage": "https://github.com/kouchao/TiantianFundApi#readme",
+  "homepage": "https://github.com/WangXiZhu/TiantianFundApi#readme",
   "dependencies": {
     "@koa/router": "^12.0.1",
     "axios": "^1.6.8",
     "glob": "^10.3.12",
-    "koa": "^2.15.3"
+    "koa": "^2.15.3",
+    "koa-static": "^5.0.0"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.9",

@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: kouchao/tiantian_fund_api:latest,kouchao/tiantian_fund_api:${{ steps.get_version.outputs.VERSION }}
+          tags: WangXiZhu/tiantian_fund_api:latest,WangXiZhu/tiantian_fund_api:${{ steps.get_version.outputs.VERSION }}

@@ -29,3 +29,5 @@ coverage
 # vite
 .temp
 .cache
+
+.agent

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+
+# Development files
+.git
+.github
+.agent
+test
+docs
+
+# IDE
+.vscode
+.idea
+
+# Build artifacts
+*.log
+.nyc_output
+coverage
+
+# Local env
+.env.local
+.env.*.local
