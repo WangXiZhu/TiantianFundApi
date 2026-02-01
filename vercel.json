@@ -1,4 +1,5 @@
 {
+  "outputDirectory": "public",
   "rewrites": [
     { "source": "/fundMNDetailInformation", "destination": "/api/action?action_name=fundMNDetailInformation" },
     { "source": "/fundMNHisNetList", "destination": "/api/action?action_name=fundMNHisNetList" },
